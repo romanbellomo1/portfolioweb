@@ -53,6 +53,7 @@ body {
 }
 .main-rb span {
   color: #2ecc71;
+  margin-left: 4px;
 }
 
 .main-rb h1 {
@@ -76,13 +77,33 @@ body {
   margin-top: 2%;
   gap: 35px;
 }
+.contact-me i{
+    display: flex;
+    justify-content: start;
+    margin-right: 28%;
+}
+
+.contact-me i p{
+    text-align: center;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: end;
+    margin-left: 30%;
+    font-style: normal;
+}
+
 .contact-me {
+    
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   width: 180px;
-  height: 45px;
+  height: 47px;
   background-color: #2ecc71;
   border: none;
   cursor: pointer;
-  color: white;
+  color: black;
   border-radius: 10px;
 }
 
@@ -108,11 +129,26 @@ body {
   color: white;
 }
 .botones {
+    color: red;
   display: flex;
   justify-content: center;
   margin-top: 2%;
   font-size: 25px;
   gap: 30px;
+}
+
+.botones a{
+    color: black;
+}
+
+.botones a:hover{
+    color: #2ecc71;
+}
+
+.footeri{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
 }
 body {
   width: 100%;
@@ -326,6 +362,7 @@ footer{
   transform: scale(0.9);
 }
  .zigzag-timeline {
+    margin-top: 8%;
             position: relative;
             max-width: 900px;
             margin: 0 auto;
@@ -396,8 +433,317 @@ footer{
 }
 
         .xp{
-            margin-bottom: 2%;
+            margin-top: 12%;
             display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px; }
+.footere{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+  .container h3{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 2%;
+  }
+  
+  .course-tittle{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 5%;
+  }
+  .footerr{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+  }
+        .courses-grid {
+            margin-top: 2%;
+           display: grid;
+            grid-template-columns: repeat(3, minmax(380px, 1fr)); /* Tarjetas más pequeñas */
+
+           gap: 45px;
+            margin-bottom: 40px;
+            justify-content: center;  }
+        .course-card {
+          border-radius: 16px;
+          padding: 40px;
+          background-color: #ece6e6;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+        }
+             .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--course-color);
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .course-header{
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+            .course-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: var(--course-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: black;
+            font-size: 1.5rem;
+        }
+     
+
+        .course-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .course-info {
+            margin-bottom: 15px;
+        }
+        
+        .course-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .course-info {
+            margin-bottom: 15px;
+        }
+
+        .institution {
+            color: var(--course-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .year-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .year {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status.presente {
+            background: #2ecc71;
+            color: black;
+        }
+
+        .status.completado {
+            background: black;
+            color: #2ecc71;
+        }
+
+        .grade {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .fullstack { --course-color: #2ecc71; }
+        .portuguese { --course-color: black; }
+        .database { --course-color: #2ecc71; }
+        .web-dev { --course-color: black; }
+        .electronics { --course-color: #2ecc71; }
+        .english { --course-color: black; }
+
+                .trabajar{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 12%;
+        }
+
+        .titulo h5{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          font-size: 35px ;
+          margin-bottom: 2%;
+          
+        }
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #2ecc71;
+  box-shadow: 0 0 0 2px #2ecc71;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    margin-top: 8%;
+}
+
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #2ecc71;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #2ecc71;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.form-contacto {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text{
+    color: black;
+    text-decoration: none;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 12px 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: #2ecc71;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.form-contacto button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-contacto button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.03);
+}
+.footerc{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
