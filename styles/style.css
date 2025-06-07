@@ -19,6 +19,32 @@ body {
   color: white;
 }
 
+@media (max-width: 660px) {
+  header nav a  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+}
+
+
+
+
+  .navbar {
+    gap: 120px; /* Reducir espacio entre elementos */
+    font-size: 16px;
+  }
+
+  .header-rb {
+    margin-top: 15px; /* Menos margen superior */
+  }
+
+  .navbar .boton-nav {
+    padding: 0.3rem 0.8rem; /* Botones más pequeños */
+  }
+}
+
 .navbar .boton-nav {
  color: #2ecc71;
    transform: translateY(-2px);
